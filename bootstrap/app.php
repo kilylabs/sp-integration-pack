@@ -96,9 +96,9 @@ $app->register(App\Providers\AuthServiceProvider::class);
 _|
 */
 
-$app->router->group([
+$app->group([
     'namespace' => 'App\Http\Controllers',
-], function ($router) {
+], function ($app) {
     require __DIR__.'/../routes/web.php';
 });
 

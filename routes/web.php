@@ -11,6 +11,6 @@
 |
 */
 
-$router->group(['prefix' => 'salespoint'], function () use ($router) {
-    $router->get('get', ['middleware'=>['auth'],'uses'=>'SalespointController@handle']);
+$app->group(['prefix' => 'salespoint'], function () use ($app) {
+    $app->get('get', ['middleware'=>['auth'],'uses'=>'SalespointController@handle']);
 });
